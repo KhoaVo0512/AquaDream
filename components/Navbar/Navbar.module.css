@@ -1,0 +1,145 @@
+.navContainer {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: transparent !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.nav {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  background-color: transparent !important;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.navMiddle {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  transition: 0.2s ease-in-out;
+  
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 255);
+}
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  float: right;
+}
+
+.profileImage {
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+/* mobile  */
+
+.menuText:hover {
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  display: none;
+}
+
+.dropdownIcon {
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  opacity: 0;
+  position: absolute;
+  min-width: 160px;
+  z-index: 3;
+  background-color: #000;
+  margin-top: 0.5px !important;
+  transition: opacity 0.3s ease-out;
+}
+
+.showDropdowMenu {
+  opacity: 1;
+}
+
+.svgRotate {
+  transform: rotate(90deg) !important;
+  transition: 0.1s;
+}
+
+/* Sreens less than 720px */
+@media (max-width: 500px) {
+  .navConnect {
+    margin-left: 10px;
+  }
+
+  .navMiddle {
+    display: none;
+  }
+
+  .dropDownMenu {
+    display: block;
+  }
+
+  .link {
+    padding: 12px;
+    display: block;
+  }
+
+  .link:hover {
+    background-color: #146ea2;
+  }
+
+}
